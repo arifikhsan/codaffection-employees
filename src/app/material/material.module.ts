@@ -11,7 +11,8 @@ const modules = [
   Mat.MatSelectModule,
   Mat.MatDatepickerModule,
   Mat.MatNativeDateModule,
-  Mat.MatCheckboxModule
+  Mat.MatCheckboxModule,
+  Mat.MatSnackBarModule
 ];
 
 @NgModule({

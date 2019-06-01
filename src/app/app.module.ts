@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { DepartmentService } from './shared/department.service';
 
 @NgModule({
   declarations: [AppComponent, EmployeesComponent, EmployeeComponent],
@@ -24,7 +25,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService, DepartmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
