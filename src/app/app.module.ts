@@ -14,13 +14,15 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { DepartmentService } from './shared/department.service';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
+import { MatConfirmDialogComponent } from './mat-confirm-dialog/mat-confirm-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    MatConfirmDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,6 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
   ],
   providers: [EmployeeService, DepartmentService],
   bootstrap: [AppComponent],
-  entryComponents: [EmployeeComponent]
+  entryComponents: [EmployeeComponent, MatConfirmDialogComponent]
 })
 export class AppModule {}

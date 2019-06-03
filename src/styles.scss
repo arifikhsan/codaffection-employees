@@ -17,10 +17,22 @@ snack-bar-container.success {
 
 snack-bar-container.warn {
   background-color: #f99157;
-  color: #fff
+  color: #fff;
 }
 
 snack-bar-container.notification simple-snack-bar {
   font-size: 18px !important;
   font-weight: bold;
+}
+
+confirm-dialog-container .content-container {
+  margin: 5px 5px 15px 5px;
+  color: #8f9cb5;
+  display: flex;
+}
+
+confirm-dialog-container #close-icon {
+  margin-left: auto;
+  order: 2;
+  font-weight: bolder;
 }
