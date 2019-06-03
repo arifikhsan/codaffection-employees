@@ -16,7 +16,8 @@ const modules = [
   Mat.MatTableModule,
   Mat.MatIconModule,
   Mat.MatPaginatorModule,
-  Mat.MatSortModule
+  Mat.MatSortModule,
+  Mat.MatDialogModule
 ];
 
 @NgModule({

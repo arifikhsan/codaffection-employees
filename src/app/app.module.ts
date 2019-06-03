@@ -33,6 +33,7 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [EmployeeService, DepartmentService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [EmployeeComponent]
 })
 export class AppModule {}

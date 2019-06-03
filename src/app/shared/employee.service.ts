@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import * as _ from 'lodash';
 
 @Injectable({
   providedIn: 'root'
@@ -90,5 +91,9 @@ export class EmployeeService {
     // if (~index) {
     //   this.employeeList.splice(index, 1);
     // }
+  }
+
+  populateForm(employee) {
+    this.form.setValue(_.omit(employee, 'departmentName'));
   }
 }
